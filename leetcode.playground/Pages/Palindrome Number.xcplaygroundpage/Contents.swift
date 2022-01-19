@@ -6,11 +6,11 @@ func isPalindrome(_ x: Int) -> Bool {
     let chars = String(x)
     let reversedChars = String(chars.reversed())
     
-    if chars == reversedChars {
-        return true
+    if chars != reversedChars {
+        return false
     }
     
-    return false
+    return true
 }
 
 isPalindrome(num)
@@ -32,11 +32,11 @@ func isPalindrome2(_ x: Int) -> Bool {
         arrInverted.insert(pop, at: arrInverted.endIndex)
     }
     
-    if arr == arrInverted {
-        return true
+    if arr != arrInverted {
+        return false
     }
     
-    return false
+    return true
 }
 
 isPalindrome2(num)

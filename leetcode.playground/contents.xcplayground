@@ -4,5 +4,6 @@
         <page name='Remove Element'/>
         <page name='Two Sum'/>
         <page name='Palindrome Number'/>
+        <page name='Roman to Integer'/>
     </pages>
 </playground>
