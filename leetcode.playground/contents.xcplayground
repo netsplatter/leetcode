@@ -7,5 +7,7 @@
         <page name='Roman to Integer'/>
         <page name='Longest Common Prefix'/>
         <page name='Valid Parentheses'/>
+        <page name='Merge Two Sorted Lists'/>
+        <page name='Remove Duplicates from Sorted Array'/>
     </pages>
 </playground>
