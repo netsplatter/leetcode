@@ -10,5 +10,7 @@
         <page name='Merge Two Sorted Lists'/>
         <page name='Remove Duplicates from Sorted Array'/>
         <page name='Hired.com assessments'/>
+        <page name='Implement strStr()'/>
+        <page name='Valid Palindrome'/>
     </pages>
 </playground>
