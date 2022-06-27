@@ -12,5 +12,6 @@
         <page name='Hired.com assessments'/>
         <page name='Implement strStr()'/>
         <page name='Valid Palindrome'/>
+        <page name='Search Insert Position'/>
     </pages>
 </playground>
