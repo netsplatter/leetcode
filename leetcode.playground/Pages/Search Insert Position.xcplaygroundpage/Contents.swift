@@ -43,4 +43,26 @@ class Solution2 {
     }
 }
 
-Solution2().searchInsert([1,3,5,6,7], 6)
+//Solution2().searchInsert([1,3,5,6,7], 6)
+
+class Solution3 {
+    func searchInsert(_ nums: [Int], _ target: Int) -> Int {
+        guard nums.startIndex < nums.endIndex else { return -1 }
+        
+        let midIndex: Int = nums.count / 2
+        
+        if nums.count == 1 {
+            return 1
+        }
+        
+        if target < nums[midIndex] {
+            return searchInsert(Array(nums[0..<midIndex]), target)
+        } else if target > nums[midIndex] {
+            return searchInsert(Array(nums[midIndex..<nums.endIndex]), target)
+        } else {
+            return midIndex
+        }
+    }
+}
+
+Solution3().searchInsert([1,3,5,7], 7)
