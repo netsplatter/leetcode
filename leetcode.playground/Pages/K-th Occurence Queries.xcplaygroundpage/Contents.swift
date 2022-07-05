@@ -1,3 +1,3 @@
-func solve(X: Int, arr: [Int], queryValues: [Int]) -> [Int] {
-    
-}
+//func solve(X: Int, arr: [Int], queryValues: [Int]) -> [Int] {
+//    
+//}
