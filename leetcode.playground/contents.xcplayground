@@ -17,5 +17,6 @@
         <page name='K-th Occurence Queries'/>
         <page name='Top K Frequent Elements'/>
         <page name='Fizz Buzz'/>
+        <page name='Length of Last Word'/>
     </pages>
 </playground>
