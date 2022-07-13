@@ -46,23 +46,31 @@ class Solution2 {
 //Solution2().searchInsert([1,3,5,6,7], 6)
 
 class Solution3 {
-    func searchInsert(_ nums: [Int], _ target: Int) -> Int {
-        guard nums.startIndex < nums.endIndex else { return -1 }
-        
-        let midIndex: Int = nums.count / 2
-        
-        if nums.count == 1 {
-            return 1
-        }
-        
-        if target < nums[midIndex] {
-            return searchInsert(Array(nums[0..<midIndex]), target)
-        } else if target > nums[midIndex] {
-            return searchInsert(Array(nums[midIndex..<nums.endIndex]), target)
+    func recursion(_ nums: [Int], _ target: Int, _ left: Int, _ right: Int) -> Int {
+        print("left: \(left)")
+        print("right: \(right)")
+    
+        if left >= right {
+            return right
         } else {
-            return midIndex
+            let midIndex: Int = left + (right - left) / 2
+            print("midIndex: \(midIndex)")
+            print("midNumber: \(nums[midIndex])")
+            print()
+            if target < nums[midIndex] {
+                return recursion(nums, target, left, midIndex)
+            } else if target > nums[midIndex] {
+                return recursion(nums, target, midIndex + 1, right)
+            } else {
+                return midIndex
+            }
         }
+    }
+    
+    func searchInsert(_ nums: [Int], _ target: Int) -> Int {
+        return recursion(nums, target, 0, nums.count)
     }
 }
 
-Solution3().searchInsert([1,3,5,7], 7)
+let nums: [Int] = [1, 3, 5, 7]
+Solution3().searchInsert(nums, 2)
