@@ -20,5 +20,6 @@
         <page name='Length of Last Word'/>
         <page name='Climbing Stairs'/>
         <page name='Fukuoka tasks'/>
+        <page name='Add Binary'/>
     </pages>
 </playground>

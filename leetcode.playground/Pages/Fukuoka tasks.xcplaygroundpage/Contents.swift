@@ -212,8 +212,7 @@ import Network
 //Both B and C are running at time 14.
 
 public func solution(_ metrics: (Int, [String])) -> String {
-    var dict: [String:String] = [:]
-    var runningProcessess: [String] = []
+    var runningProcessess: [String:String] = [:]
     
     for item in metrics.1 {
         let data = item.split(separator: " ")
@@ -224,18 +223,26 @@ public func solution(_ metrics: (Int, [String])) -> String {
             state = String(data[2])
         
         if t <= metrics.0 {
-            dict[process] = state
+            if state == "running" {
+                runningProcessess[process] = state
+            } else {
+                runningProcessess[process] = nil
+            }
         }
     }
     
-    for key in dict.keys {
-        if dict[key] == "running" {
-            runningProcessess.append(key)
-        }
-    }
-
-    return runningProcessess.count == 1 ? runningProcessess[0] : "-1"
+    return runningProcessess.count == 1 ? Array(runningProcessess.keys)[0] : "-1"
 }
+
+solution((15, ["0 A created",
+               "1 B created",
+               "10 A running",
+               "12 B waiting",
+               "13 B running",
+               "14 A waiting",
+               "15 A terminated",
+               "17 B terminated",
+               "18 A terminated"]))
 
 
 solution((15, ["0 A created",
@@ -258,6 +265,10 @@ solution((14, ["0 A created",
                "14 C running",
                "17 B terminated",
                "18 A terminated"]))
+
+//todo
+// check if process status changed
+
 
 
 // 5.
