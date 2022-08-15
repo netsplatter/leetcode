@@ -33,6 +33,11 @@ class Solution2 {
             return midIndex
         }
         
+        if target > nums.last! {
+            return nums.endIndex
+        }
+        
+        
         if target < nums[midIndex] {
             let leftNums = Array(nums[0..<midIndex])
             return searchInsert(leftNums, target)
@@ -43,7 +48,7 @@ class Solution2 {
     }
 }
 
-//Solution2().searchInsert([1,3,5,6,7], 6)
+//Solution2().searchInsert([1,3,5,6], 2)
 
 class Solution3 {
     func recursion(_ nums: [Int], _ target: Int, _ left: Int, _ right: Int) -> Int {
@@ -56,7 +61,6 @@ class Solution3 {
             let midIndex: Int = left + (right - left) / 2
             print("midIndex: \(midIndex)")
             print("midNumber: \(nums[midIndex])")
-            print()
             if target < nums[midIndex] {
                 return recursion(nums, target, left, midIndex)
             } else if target > nums[midIndex] {

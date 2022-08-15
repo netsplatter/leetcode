@@ -342,3 +342,13 @@ solution((14, ["0 A created",
 //
 //
 //solution(["add 5 3", "add 1 2", "get 5", "evict", "get 1", "remove 5", "exit"])
+
+
+
+struct x {
+    let a: Int = 5
+}
+
+var y = x()
+//y.a = 6
+print(y.a)

@@ -20,6 +20,7 @@
         <page name='Length of Last Word'/>
         <page name='Climbing Stairs'/>
         <page name='Fukuoka tasks'/>
-        <page name='Add Binary'/>
+        <page name='Plus One'/>
+        <page name='Largest Substring Between Two Equal Characters'/>
     </pages>
 </playground>
