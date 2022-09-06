@@ -1,26 +1,31 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <playground version='6.0' target-platform='ios' buildActiveScheme='true' importAppTypes='true'>
     <pages>
-        <page name='Remove Element'/>
-        <page name='Two Sum'/>
-        <page name='Palindrome Number'/>
-        <page name='Roman to Integer'/>
-        <page name='Longest Common Prefix'/>
-        <page name='Valid Parentheses'/>
-        <page name='Merge Two Sorted Lists'/>
-        <page name='Remove Duplicates from Sorted Array'/>
+        <page name='1. Two Sum'/>
+        <page name='7. Reverse Integer TODO'/>
+        <page name='9. Palindrome Number'/>
+        <page name='13. Roman to Integer'/>
+        <page name='14. Longest Common Prefix'/>
+        <page name='20. Valid Parentheses'/>
+        <page name='21. Merge Two Sorted Lists'/>
+        <page name='26. Remove Duplicates from Sorted Array'/>
+        <page name='27. Remove Element'/>
+        <page name='35. Search Insert Position'/>
+        <page name='58. Length of Last Word'/>
+        <page name='66. Plus One'/>
+        <page name='70. Climbing Stairs'/>
+        <page name='88. Merge Sorted Array'/>
+        <page name='125. Valid Palindrome'/>
+        <page name='357. Top K Frequent Elements'/>
+        <page name='412. Fizz Buzz'/>
+        <page name='1480. Running Sum of 1d Array'/>
+        <page name='1624. Largest Substring Between Two Equal Characters'/>
+        <page name='1672. Richest Customer Wealth'/>
         <page name='Hired.com assessments'/>
+        <page name='Fukuoka tasks'/>
         <page name='Implement strStr()'/>
-        <page name='Valid Palindrome'/>
-        <page name='Search Insert Position'/>
         <page name='Eliminate Substring'/>
         <page name='K-th Occurence Queries'/>
-        <page name='Top K Frequent Elements'/>
-        <page name='Fizz Buzz'/>
-        <page name='Length of Last Word'/>
-        <page name='Climbing Stairs'/>
-        <page name='Fukuoka tasks'/>
-        <page name='Plus One'/>
-        <page name='Largest Substring Between Two Equal Characters'/>
+        <page name='Grokking-Sliding-Window-1'/>
     </pages>
 </playground>
