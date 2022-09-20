@@ -1,7 +1,7 @@
 // TC: o(n)
 func addBinary(_ a: String, _ b: String) -> String {
-    var aArray = Array(a)
-    var bArray = Array(b)
+    let aArray = Array(a)
+    let bArray = Array(b)
     
     var i = aArray.count - 1
     var j = bArray.count - 1
