@@ -1,7 +1,3 @@
-import UIKit
-let start = CFAbsoluteTimeGetCurrent()
-
-
 func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
     var dict = [Int: Int]()
     
@@ -16,7 +12,3 @@ func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
 }
 
 twoSum([3,2,3], 6)
-
-
-let diff = CFAbsoluteTimeGetCurrent() - start
-print("Took \(diff) seconds")
